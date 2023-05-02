@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <View
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#e4e4e4" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e4e4e4"
+        android:paddingLeft="20dp" />
+
+    <com.lucasurbas.listitemview.ListItemView
+        android:id="@+id/alter_nickname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingLeft="20dp"
+        app:liv_iconColor="#3b57da"
+        app:liv_displayMode="icon"
+        app:liv_icon="@drawable/edit"
+        app:liv_multiline="false"
+        app:liv_title="修改昵称" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e4e4e4"
+        android:paddingLeft="20dp" />
+
+    <com.lucasurbas.listitemview.ListItemView
+        android:id="@+id/alter_sex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingLeft="20dp"
+        app:liv_iconColor="#3b57da"
+        app:liv_displayMode="icon"
+        app:liv_icon="@drawable/report"
+        app:liv_multiline="false"
+        app:liv_title="修改性别" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e4e4e4"
+        android:paddingLeft="20dp" />
+    <com.lucasurbas.listitemview.ListItemView
+        android:id="@+id/alter_birthday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingLeft="20dp"
+        app:liv_displayMode="icon"
+        app:liv_iconColor="#3b57da"
+        app:liv_icon="@drawable/exchange"
+        app:liv_multiline="true"
+        app:liv_title="修改生日" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e4e4e4"
+        android:paddingLeft="20dp" />
+</LinearLayout>

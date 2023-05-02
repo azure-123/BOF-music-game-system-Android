@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fancy="http://schemas.android.com/tools"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:padding="5dp"
+        android:background="@drawable/icon_with_stroke"
+        >
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/personal_icon"
+        />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/user_nickname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="user nickname"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/user_sex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="user sex"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/user_birthday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="user birthday"
+        android:textColor="@color/black"
+        android:layout_marginBottom="20dp"/>
+<!--    <Button-->
+<!--        android:id="@+id/file"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="修改资料"/>-->
+<!--    <Button-->
+<!--        android:id="@+id/like"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="我的收藏"/>-->
+<!--    <Button-->
+<!--        android:id="@+id/exit"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="退出登录"/>-->
+    <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#e4e4e4" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#e4e4e4"
+                android:paddingLeft="20dp" />
+
+            <com.lucasurbas.listitemview.ListItemView
+                android:id="@+id/file"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingLeft="20dp"
+                app:liv_iconColor="#3b57da"
+                app:liv_displayMode="icon"
+                app:liv_icon="@drawable/edit"
+                app:liv_multiline="false"
+                app:liv_title="修改资料" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#e4e4e4"
+                android:paddingLeft="20dp" />
+
+            <com.lucasurbas.listitemview.ListItemView
+                android:id="@+id/like"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingLeft="20dp"
+                app:liv_iconColor="#3b57da"
+                app:liv_displayMode="icon"
+                app:liv_icon="@drawable/report"
+                app:liv_multiline="false"
+                app:liv_title="我的收藏" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#e4e4e4"
+                android:paddingLeft="20dp" />
+            <com.lucasurbas.listitemview.ListItemView
+                android:id="@+id/exit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingLeft="20dp"
+                app:liv_displayMode="icon"
+                app:liv_iconColor="#3b57da"
+                app:liv_icon="@drawable/exchange"
+                app:liv_multiline="true"
+                app:liv_title="切换账号" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e4e4e4"
+        android:paddingLeft="20dp" />
+    <Button
+        android:id="@+id/management"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="用户管理"/>
+
+</LinearLayout>

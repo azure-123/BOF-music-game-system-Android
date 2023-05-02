@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/include_page_background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TableLayout
+                android:id="@+id/TableLayout01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#dedcd2"
+                android:stretchColumns="*" >
+
+                <TableRow
+                    android:layout_margin="0.5dip"
+                    android:background="#dedcd2" >
+
+                    <TextView
+                        android:id="@+id/hello"
+                        android:layout_margin="1dip"
+                        android:background="#ffffff"
+                        android:textSize="15dip"
+                        android:textStyle="bold"
+                        android:text="曲名"
+                        />
+
+                    <TextView
+                        android:id="@+id/goodbye"
+                        android:layout_margin="1dip"
+                        android:background="#ffffff"
+                        android:textSize="15dip"
+                        android:textStyle="bold"
+                        android:text="最低难度"/>
+
+                    <TextView
+                        android:layout_margin="1dip"
+                        android:background="#ffffff"
+                        android:textSize="15dip"
+                        android:textStyle="bold"
+                        android:text="较低难度"/>
+                    <TextView
+                        android:layout_margin="1dip"
+                        android:background="#ffffff"
+                        android:textSize="15dip"
+                        android:textStyle="bold"
+                        android:text="较高难度"/>
+                    <TextView
+                        android:layout_margin="1dip"
+                        android:background="#ffffff"
+                        android:textSize="15dip"
+                        android:textStyle="bold"
+                        android:text="最高难度"/>
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

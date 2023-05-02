@@ -1,0 +1,64 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    compileSdk 30
+
+    defaultConfig {
+        applicationId "com.example.bof_project"
+        minSdk 21
+        targetSdk 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    splits {
+        abi {
+            enable true
+            reset()
+            include 'x86', 'x86_64', 'armeabi-v7a', 'armeabi'
+            universalApk false
+        }
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.3.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.ramotion.foldingcell:folding-cell:1.2.2'
+    implementation 'com.squareup.okhttp3:okhttp:4.3.1'
+    implementation 'com.github.Rukey7:IjkPlayerView:v1.0.4'
+    implementation 'com.eminayar.panterdialog:panter-dialog:0.0.2.1'
+    implementation 'com.wdullaer:materialdatetimepicker:4.2.3'
+    implementation 'com.rengwuxian.materialedittext:library:2.1.4'
+    implementation "com.hanks:htextview-base:0.1.6"        // base library
+    implementation "com.hanks:htextview-evaporate:0.1.6"   // optional
+    implementation 'com.github.zcweng:switch-button:0.0.3@aar'
+    implementation 'com.github.medyo:fancybuttons:1.9.1'
+    implementation 'com.loopeer.library:cardstack:1.0.2'
+    implementation 'com.race604.flyrefresh:library:2.0.0'
+    implementation 'jp.wasabeef:recyclerview-animators:4.0.2'
+    implementation 'com.lucasurbas:listitemview:1.1.1'
+
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    implementation 'com.facebook.stetho:stetho:1.5.1'
+
+}

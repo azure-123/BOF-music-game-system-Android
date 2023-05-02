@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/register_layout"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:id="@+id/loginLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="20dp"
+        android:background="#9fF4F4F4"
+        android:orientation="vertical">
+
+<!--        <EditText-->
+<!--            android:id="@+id/et_data_uname"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="20dp"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:layout_marginEnd="20dp"-->
+<!--            android:layout_marginBottom="0dp"-->
+<!--            android:hint="请输入昵称："-->
+<!--            android:textSize="18dp" />-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:paddingTop="8dp"
+            android:textColor="@color/white"
+            android:typeface="serif"
+            android:textSize="30sp"
+            android:text="Register"/>
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/et_data_uname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="昵称"
+            android:textCursorDrawable="@drawable/text_cursor_cyan"
+            android:textSize="18dp"
+            app:met_baseColor="@android:color/white"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="20"
+            app:met_primaryColor="?colorAccent"
+            app:met_singleLineEllipsis="true" />
+<!--        <EditText-->
+<!--            android:id="@+id/et_data_upass"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_margin="20dp"-->
+<!--            android:hint="请输入密码："-->
+<!--            android:inputType="textPassword"-->
+<!--            android:textSize="18dp" />-->
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/et_data_upass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="输入密码"
+            android:textCursorDrawable="@drawable/text_cursor_cyan"
+            android:textSize="18dp"
+            app:met_baseColor="@android:color/white"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="20"
+            app:met_primaryColor="?colorAccent"
+            app:met_singleLineEllipsis="true" />
+
+<!--        <EditText-->
+<!--            android:id="@+id/et_data_uconf"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="20dp"-->
+<!--            android:layout_marginBottom="20dp"-->
+<!--            android:layout_marginEnd="20dp"-->
+<!--            android:hint="请确认密码："-->
+<!--            android:inputType="textPassword"-->
+<!--            android:textSize="18dp" />-->
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/et_data_uconf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="确认密码"
+            android:textCursorDrawable="@drawable/text_cursor_cyan"
+            android:textSize="18dp"
+            app:met_baseColor="@android:color/white"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="20"
+            app:met_primaryColor="?colorAccent"
+            app:met_singleLineEllipsis="true" />
+
+<!--        <Button-->
+<!--            android:id="@+id/btn_register_confirm"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_marginBottom="20dp"-->
+<!--            android:paddingLeft="60dp"-->
+<!--            android:paddingTop="10dp"-->
+<!--            android:paddingRight="60dp"-->
+<!--            android:paddingBottom="10dp"-->
+<!--            android:text="注册" />-->
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:id="@+id/btn_register_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            fancy:fb_borderColor="@color/purple_200"
+            fancy:fb_borderWidth="2dp"
+            fancy:fb_focusColor="#fffffefa"
+            fancy:fb_defaultColor="@color/white"
+            fancy:fb_fontIconSize="15sp"
+            fancy:fb_radius="40dp"
+            fancy:fb_text="确认注册"
+            fancy:fb_textColor="@color/purple_200"
+            android:layout_marginBottom="20dp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
